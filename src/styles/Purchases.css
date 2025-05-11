@@ -1,0 +1,38 @@
+.purchase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.purchase-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-box {
+  width: 45px;
+  height: 45px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.purchase-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.purchase-name {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.purchase-price {
+  font-weight: bold;
+  font-size: 13px;
+}

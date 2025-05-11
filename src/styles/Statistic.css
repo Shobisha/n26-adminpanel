@@ -1,0 +1,69 @@
+.atm-card {
+  background: var(--black);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 240px;
+  margin-bottom: 10px;
+}
+
+.atm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.atm-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.atm-brand {
+  display: flex;
+}
+
+.atm-n {
+  font-size: 8px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--white);
+  border-top: 1px solid var(--white);
+}
+
+.atm-number {
+  font-size: 8px;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.atm-number-display {
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -5px;
+}
+
+.label {
+  font-size: 6px;
+  font-weight: bold;
+}
+
+.value {
+  font-size: 8px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.statistics-heading {
+  font-weight: 700;
+  font-size: 16px;
+}

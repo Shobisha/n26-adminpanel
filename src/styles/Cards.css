@@ -1,0 +1,33 @@
+.custom-card-container {
+  background-color: var(--white);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  width: 260px;
+  margin-top: 5px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.row-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+}
+
+.value {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--black);
+}

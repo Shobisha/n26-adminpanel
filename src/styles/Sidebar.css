@@ -1,0 +1,115 @@
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background-color: var(--white);
+  color: var(--gray-light);
+  padding-top: 20px;
+  transition: all 0.3s ease;
+  position: fixed;
+  z-index: 10;
+  padding: 10px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 20px 0;
+}
+
+.nav-link {
+  color: var(--gray-light);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: 0.3s;
+  position: relative;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.nav-link .sidebar-icon {
+  font-size: 16px;
+  color: var(--gray-light); 
+  margin-top: -4px;
+}
+
+.nav-link:hover .sidebar-icon,
+.nav-link.active .sidebar-icon {
+  color: var(--black); 
+  font-weight: bold; 
+}
+
+.nav-link .sidebar-text {
+  font-size: 16px;
+  color: var(--gray-light); 
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+.nav-link:hover .sidebar-text,
+.nav-link.active .sidebar-text {
+  color: var(--black); 
+  font-weight: bold; 
+}
+.logout-container {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding-left: 18px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70px;
+  }
+
+  .nav-link {
+    justify-content: center;
+    padding: 12px 0;
+  }
+
+  .nav-link .sidebar-text {
+    display: none;
+  }
+
+  .nav-link::after {
+    content: attr(data-tooltip);
+    position: fixed;
+    left: 80px;
+    transform: translateY(-50%);
+    background: #444;
+    color: var(--white);
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-link:hover::after {
+    opacity: 1;
+  }
+
+  .sidebar-icon {
+    margin: 0 auto;
+    display: block;
+    font-size: 20px;
+    color: var(--gray-light);
+  }
+
+  .nav-link:hover .sidebar-icon {
+    color: var(--black);
+  }
+.logout-container {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding-left: 0;
+}
+}
